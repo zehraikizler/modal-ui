@@ -1,0 +1,39 @@
+.modal-close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 24px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.leftright {
+  height: 2px;
+  width: 24px;
+  position: absolute;
+  margin-top: 14px;
+  background-color: #4b4b4b;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in;
+}
+
+.rightleft {
+  height: 2px;
+  width: 24px;
+  position: absolute;
+  margin-top: 14px;
+  background-color: #4b4b4b;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-in;
+}
+
+.modal-close-btn:hover .leftright {
+  transform: rotate(-45deg);
+  background-color: #2a2a2a;
+}
+.modal-close-btn:hover .rightleft {
+  transform: rotate(45deg);
+  background-color: #2a2a2a;
+}
